@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title data-bind="text: title">NO TITLE FOR YOU</title>
+<script type="text/javascript" src="http://github.com/downloads/SteveSanderson/knockout/knockout-2.1.0.js"></script>
+</head>
+<body>
+<div>
+The page title should be <span data-bind="text: title">something other than this text.</span>
+</div>
+<script>
+var viewModel = {
+    title: ko.observable("Whee! A title!")
+};
+ko.applyBindings(viewModel);
+</script>
+</body>
+</html>
